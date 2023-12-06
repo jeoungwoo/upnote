@@ -14,9 +14,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen min-w-[1400px] max-w-[1920px] flex-col p-24">
       <Header sidebar={sidebar} setSidebar={setSidebar} onSidebar={() => onSidebar()} />
-      {sidebar &&
-        <Sidebar />
-      }
+      <Sidebar hideSidebar={sidebar} />
     </main>
   )
 }
